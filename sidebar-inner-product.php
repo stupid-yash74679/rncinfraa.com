@@ -64,38 +64,6 @@
                     <!-- Gallery Item -->
                     <div class="gallery-item">
                         <div class="inner-box">
-                            <figure class="image"><img src="images/gallery/thumbs/precast-hybrid-modular-homes.png" alt=""></figure>
-                            <a href="images/gallery/precast-hybrid-modular-homes.jpg" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
-                            <div class="cap-box">
-                                <div class="cap-inner">
-                                    <div class="cat"><span>Precast</span></div>
-                                    <div class="title">
-                                        <h5><a href="product-precast.php">Hybrid Modular Homes</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gallery Item -->
-                    <div class="gallery-item">
-                        <div class="inner-box">
-                            <figure class="image"><img src="images/gallery/thumbs/lgsf-housing.png" alt=""></figure>
-                            <a href="images/gallery/lgsf-housing.jpg" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
-                            <div class="cap-box">
-                                <div class="cap-inner">
-                                    <div class="cat"><span>Housing</span></div>
-                                    <div class="title">
-                                        <h5><a href="product-precast.php">LGSF Houses</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gallery Item -->
-                    <div class="gallery-item">
-                        <div class="inner-box">
                             <figure class="image"><img src="images/gallery/thumbs/medical-shelters.png" alt=""></figure>
                             <a href="images/gallery/medical-shelters.jpg" class="lightbox-image overlay-box"
                                data-fancybox="gallery"></a>
@@ -104,22 +72,6 @@
                                     <div class="cat"><span>Medical</span></div>
                                     <div class="title">
                                         <h5><a href="product-precast.php">Medical Shelters</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gallery Item -->
-                    <div class="gallery-item">
-                        <div class="inner-box">
-                            <figure class="image"><img src="images/gallery/thumbs/precast-offices.png" alt=""></figure>
-                            <a href="images/gallery/precast-offices.jpg" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
-                            <div class="cap-box">
-                                <div class="cap-inner">
-                                    <div class="cat"><span>Precast</span></div>
-                                    <div class="title">
-                                        <h5><a href="product-precast.php">Precast Offices</a></h5>
                                     </div>
                                 </div>
                             </div>
