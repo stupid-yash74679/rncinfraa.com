@@ -34,8 +34,8 @@
                             <li class="active filter" data-role="button" data-filter="all">All<sup>[6]</sup></li>
                             <li class="filter" data-role="button" data-filter=".prefab">Prefab<sup>[3]</sup></li>
                             <li class="filter" data-role="button" data-filter=".precast">Precast Hybrid<sup>[3]</sup></li>
-                            <li class="filter" data-role="button" data-filter=".grccomponents">GRC Components<sup>[4]</sup></li>
-                            <li class="filter" data-role="button" data-filter=".ghe">GHE<sup>[3]</sup></li>
+                            <li class="filter" data-role="button" data-filter=".ktype">K Type Modular Homes<sup>[4]</sup></li>
+                            <li class="filter" data-role="button" data-filter=".flatpack">Flat Pack Containers<sup>[3]</sup></li>
                         </ul>
                     </div>
                 </div>

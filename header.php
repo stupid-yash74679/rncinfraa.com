@@ -406,81 +406,29 @@
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="about.php">About Us</a></li>
                                     <li class="dropdown">
-                                        <a href="#">Our Products <i class="fa fa-angle-down"></i></a>
-
+                                        <a href="javascript:void(0);">Our Products <i class="fa fa-angle-down"></i></a>
                                         <ul>
-
                                             <li class="nav-item dropdown" id="myDropdown">
                                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                                     Prefab </a>
                                                 <ul class="dropdown-menu">
-
-                                                    <li>
-                                                        <a class="dropdown-item" href="prefab-offices.php">Office </a>
-                                                        <!-- <ul class="submenu dropdown-menu">
-                                                           <li><a class="dropdown-item" href="prefab-mobinest.php">Mobinest</a></li>
-                                                           <li><a class="dropdown-item" href="prefab-premium-office.php">Premium office</a></li>
-                                                           <li><a class="dropdown-item" href="prefab-ms-gi-office.php">MS/GI OFFICE</a></li>
-                                                           <li><a class="dropdown-item" href="puf-panel-office.php">Puf Panel office</a></li>
-                                                           <li><a class="dropdown-item" href="prefab-project-office.php">Project office</a></li>
-                                                        </ul> -->
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="prefab-toilet.php">Toilet
-                                                            <!-- <i class="fa fa-angle-right" ></i> --> </a>
-                                                        <!-- <ul class="submenu dropdown-menu">
-                                                           <li><a class="dropdown-item" href="frp-toilet.php">FRP Toilet</a></li>
-                                                           <li><a class="dropdown-item" href="ms-gi-toilet.php">MS-GI Toilet</a></li>
-                                                           <li><a class="dropdown-item" href="puf-toilet.php">Puf Panel Toilet</a></li>
-                                                           <li><a class="dropdown-item" href="toilet-van.php">Toilet Van</a></li>
-                                                           <li><a class="dropdown-item"href="bio-toilet.php">Bio Toilet</a></li>
-                                                           <li><a class="dropdown-item"href="mobile-toilet-vans.php">Mobile Toilet Vans</a></li>
-                                                           <li><a class="dropdown-item"href="chemical-toilet.php">Chemical Toilet</a></li>
-                                                        </ul> -->
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="prefab-workmen-colony.php">Workmen
-                                                            Colony <!-- <i class="fa fa-angle-right" ></i> --> </a>
-                                                        <!-- <ul class="submenu dropdown-menu">
-                                                           <li><a class="dropdown-item" href="workmen-colony-aerocon-panel.php">Aerocon Panel</a></li>
-                                                           <li><a class="dropdown-item" href="workmen-colony-eps-panel.php">EPS Panel</a></li>
-                                                           <li><a class="dropdown-item" href="workmen-colony-puf-panel.php">PUF Panel</a></li>
-                                                        </ul> -->
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="prefab-housing.php">Prefab
-                                                            Housing <!-- <i class="fa fa-angle-right" ></i> --> </a>
-                                                        <!-- <ul class="submenu dropdown-menu">
-                                                           <li><a class="dropdown-item" href="prefab-housing-container-homes.php">Container Homes </a></li>
-                                                           <li><a class="dropdown-item" href="puf-panel-weekend-homes.php">Puf Panel Weekend Homes</a></li>
-                                                           <li><a class="dropdown-item" href="modular-houses-data.php">Modular Houses &#8211; Data</a></li>
-                                                        </ul> -->
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="hospital-isolation-wards.php">Hospital/Isolation
-                                                            wards </a></li>
+                                                    <li><a class="dropdown-item" href="prefab-offices.php">Office </a></li>
+                                                    <li><a class="dropdown-item" href="prefab-toilet.php">Toilet </a></li>
+                                                    <li><a class="dropdown-item" href="prefab-workmen-colony.php">Workmen Colony <!-- <i class="fa fa-angle-right" ></i> --> </a></li>
+                                                    <li><a class="dropdown-item" href="prefab-housing.php">Prefab Housing <!-- <i class="fa fa-angle-right" ></i> --> </a></li>
+                                                    <li><a class="dropdown-item" href="hospital-isolation-wards.php">Hospital/Isolation wards </a></li>
                                                 </ul>
                                             </li>
                                             <li class="nav-item dropdown" id="myDropdown">
                                                 <a class="nav-link dropdown-toggle" href="product-precast.php"
                                                    data-bs-toggle="dropdown">Precast Hybrid Modular </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item"
-                                                           href="product-precast.php#hybridmodularhomes">Housing</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item"
-                                                           href="product-precast.php#hybridmodularoffices">Office</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item"
-                                                           href="product-precast.php#hybridmodulartoilets">Toilets</a>
-                                                    </li>
+                                                    <li><a class="dropdown-item" href="product-precast.php#hybridmodularhomes">Housing</a></li>
+                                                    <li><a class="dropdown-item" href="product-precast.php#hybridmodularoffices">Office</a></li>
+                                                    <li><a class="dropdown-item" href="product-precast.php#hybridmodulartoilets">Toilets</a></li>
                                                 </ul>
                                             </li>
-                                            <!-- <li class="nav-item dropdown" id="myDropdown">
-                                               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">LGSF </a>
-                                               <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Habinest from Tata Nest-in </a></li>
-                                               </ul>
-                                            </li> -->
+                                            <li><a href="index.php">K Type Modular House</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
@@ -493,8 +441,7 @@
                                     <li class="dropdown">
                                         <a href="javascript:">Specific Solutions <i class="fa fa-angle-down"></i></a>
                                         <ul>
-                                            <li><a href="infrastructure-solutions.php"> Infrastructure Solutions </a>
-                                            </li>
+                                            <li><a href="infrastructure-solutions.php"> Infrastructure Solutions </a></li>
                                             <li><a href="housing-solutions.php"> Housing Solutions </a></li>
                                             <li><a href="community-solutions.php"> Community Solutions </a></li>
                                         </ul>

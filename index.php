@@ -862,7 +862,7 @@
                                             </div>
                                             <div class="col-6">
                                                 <ul>
-                                                    <li>LGSF Homes</li>
+                                                    <li>K Type Modular Homes</li>
                                                     <li>Container Homes</li>
                                                 </ul>
                                             </div>
