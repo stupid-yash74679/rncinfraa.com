@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<?php include("onload.php");?> 
+
 <!-- Banner Section -->
 <section class="page-banner">
     <div class="image-layer" style="background-image:url(images/background/image-7.jpg);"></div>

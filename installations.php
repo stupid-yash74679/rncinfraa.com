@@ -1,5 +1,5 @@
 <?php include("header.php");?>
-<?php include("onload.php");?> 
+
 
     <!-- Banner Section -->
     <section class="page-banner">

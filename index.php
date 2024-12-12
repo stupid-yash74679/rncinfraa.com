@@ -1019,6 +1019,49 @@
                             </div>
                         </div>
 
+                        <div class="slide-item">
+                            <!-- <figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure> -->
+                            <div class="broucher-slider">
+                                <div class="broucher-slide">
+                                    <div class="boucher-container">
+                                        <div class="broucher-detail">
+                                            <a class="click2" href="pdf/RNC-Infraa-K-Type-Modular-Prefab-House.pdf"><img
+                                                        src="images/brochure-images/k-type-brochure.webp"
+                                                        style="width: 100%;"></a>
+                                        </div>
+                                        <!-- <div class="broucher-overlay">
+                                                <div class="overlay-bro"><a class="click2"
+                                                            href="pdf/RNC-Infraa-Workmen-Colony-Brochure-Min.pdf"
+                                                            class="download-icon" download><span><i class="fa fa-download"></i></span>Download</a>
+                                                    <a class="click2" href="pdf/RNC-Infraa-Workmen-Colony-Brochure-Min.pdf"
+                                                       class="prev-icon"><span><i class="fa fa-eye"></i></span>Preview</a></div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-item">
+                            <!-- <figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure> -->
+                            <div class="broucher-slider">
+                                <div class="broucher-slide">
+                                    <div class="boucher-container">
+                                        <div class="broucher-detail">
+                                            <a class="click2" href="pdf/RNC-Infraa-Flat-Pack-Detachable-Container.pdf"><img
+                                                        src="images/brochure-images/flat-pack-brochure.webp"
+                                                        style="width: 100%;"></a>
+                                        </div>
+                                        <!-- <div class="broucher-overlay">
+                                                <div class="overlay-bro"><a class="click2"
+                                                            href="pdf/RNC-Infraa-Workmen-Colony-Brochure-Min.pdf"
+                                                            class="download-icon" download><span><i class="fa fa-download"></i></span>Download</a>
+                                                    <a class="click2" href="pdf/RNC-Infraa-Workmen-Colony-Brochure-Min.pdf"
+                                                       class="prev-icon"><span><i class="fa fa-eye"></i></span>Preview</a></div>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
