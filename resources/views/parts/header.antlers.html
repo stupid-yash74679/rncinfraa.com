@@ -1,68 +1,69 @@
-<nav class="alt_header fixed top-0 left-0 w-screen bg-black text-white z-50">
-    <div class="container mx-auto px-6 py-7 flex justify-between items-center">
-        <a href="/" aria-label="Back to Homepage">
-            <img src="/images/alt_logo.svg" alt="{{ config:app:name }}" class="w-[100px]">
-            <!--                    <img src="{{ glide src='/images/logo.png' format='webp' width='100'}}" alt="{{ config:app:name }}" class="w-[100px]">-->
-        </a>
-        <ul class="links hidden lg:flex">
-            {{ nav:main_nav }}
+<div class="d-none d-md-none d-lg-none d-xl-block">
+  <header class="main-header header-style-one">
+    <div class="header-upper">
+      <div class="inner-container clearfix">
+        <div class="logo-box">
+          <div class="logo"> <a href="index.php" title="RNC Infraa Pvt. Ltd." > <img src="/images/logo.png" id="thm-logo" alt="RNC Infraa Pvt. Ltd." title="RNC Infraa Pvt. Ltd." style="margin: -30px !important;"/> </a> </div>
+        </div>
+        <div class="nav-outer clearfix">
+          <div class="mobile-nav-toggler"> <span class="icon flaticon-menu-2"></span> <span class="txt">Menu</span> </div>
+          <nav class="main-menu navbar-expand-md navbar-light">
+            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+              <ul class="navigation clearfix">
+                {{ nav:main_nav }}
                 {{ if children }}
-                <li class="relative group">
-                    <a href="{{ url }}" aria-label="{{ title }}" class="whitespace-nowrap px-10 py-7 hover:underline">{{ title }}</a>
-                    <ul class="absolute top-[100%] right-0 bg-black py-5 space-y-5 shadow-md mt-5 hidden group-hover:flex flex-col">
-                        {{ *recursive children* }}
-                    </ul>
+                <li class="dropdown"> <a href="{{ url }}">{{ title }} <i class="fa fa-angle-down"></i></a>
+                  <ul>
+                    {{ children }}
+                    <li> <a href="{{ url }}" aria-label="{{ title }}">{{ title }}</a> </li>
+                    {{ /children }}
+                  </ul>
                 </li>
                 {{ else }}
-                <li class="">
-                    <a href="{{ url }}" aria-label="{{ title }}" class="whitespace-nowrap px-10 py-7 hover:underline">{{ title }}</a>
-                </li>
+                <li> <a href="{{ url }}" aria-label="{{ title }}">{{ title }}</a> </li>
                 {{ /if }}
-            {{ /nav:main_nav }}
-        </ul>
-        <div class="mob-nav flex lg:hidden items-center" x-on:click="navOpen = ! navOpen">
-            <div class="hamburger hamburger--spin" style="z-index: 9999999;" x-bind:class="navOpen ? 'is-active' : ''">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
+                {{ /nav:main_nav }}
+              </ul>
             </div>
+          </nav>
         </div>
-
+        <div class="other-links clearfix">
+          <div class="link-box">
+            <div class="call-us"> <a class="link" href="tel:+91 99790 97311" onclick="gtag('event', 'send', { 'event_category': 'click on Mobile', 'event_action': 'Mobile', 'event_label': '+91 99790 97311' });"> <span class="icon"></span> <span class="sub-text">For Enquiries</span> <span class="number">+91 99790 97311</span> </a> </div>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
-
-<div class="mobile-menu fixed top-0 right-0 left-0 bg-black text-white z-40 transition-all duration-500" x-bind:class="navOpen ? 'bottom-0 preventScroll' : 'bottom-[100%]'" x-cloak>
-    <div class="overflow-y-scroll w-screen h-full max-h-screen">
-        <div class="spacer"></div>
-        <ul class="links space-y-7 px-6 pb-10">
-        {{ nav:main_nav }}
-            {{ if children }}
-            <li class="" x-data="{subnav: false}">
-                <div class="flex justify-between" x-on:click="subnav = ! subnav">
-                    {{ title }}
-                    <svg class="transition" x-bind:class="subnav ? 'rotate-180' : ''"
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="10.909" viewBox="0 0 20 10.909">
-                        <path id="Down_Arrow_3_" d="M30,50.909a.906.906,0,0,1-.643-.266l-9.091-9.091a.909.909,0,0,1,1.285-1.285L30,48.714l8.448-8.448a.909.909,0,0,1,1.285,1.285l-9.091,9.091A.906.906,0,0,1,30,50.909Z" transform="translate(-20 -40)" fill="#FFF"/>
-                    </svg>
-
-                </div>
-                <div class="mob-subnav" x-bind:class="subnav ? 'h-full max-h-[400px] visible' : 'h-0 invisible'">
-                    <div class="px-3 flex flex-col">
-                    {{ children }}
-                        <a href="{{ url }}" aria-label="{{ title }}" class= pt-5 x-on:click="navOpen = ! navOpen">{{ title }}</a>
-                    {{ /children }}
-                    </div>
-                </div>
-            </li>
-            {{ else }}
-            <li>
-                <a href="{{ url }}" aria-label="{{ title }}">{{ title }}</a>
-            </li>
-            {{ /if }}
-        {{ /nav:main_nav }}
-        </ul>
-    </div>
+  </header>
 </div>
-
-<div class="spacer"></div>
-
+<div class="d-block d-md-block d-lg-block d-xl-none">
+  <div id='main-menu' class='main-menu'>
+    <div class='container-menu'>
+      <nav class='navigation'>
+        <div class="logo"> <a href="index.php" title="RNC Infraa Pvt. Ltd." > <img src="/images/logo.png" id="thm-logo" alt="RNC Infraa Pvt. Ltd." title="RNC Infraa Pvt. Ltd." style="margin: -30px !important;"/> </a> </div>
+        <span class='hamburger-menu'>
+        <div class="top-toggle"> <span class='burger-1'></span> <span class='burger-2'></span> <span class='burger-3'></span> </div>
+        </span>
+        <ul class='core-menu'>
+          {{ nav:main_nav }}
+          {{ if children }}
+          <li class="dropdown"> <a href="{{ url }}">{{ title }} <i class="fa fa-angle-down"></i></a>
+            <ul>
+              {{ children }}
+              <li> <a href="{{ url }}" aria-label="{{ title }}">{{ title }}</a> </li>
+              {{ /children }}
+              <li><a href="modular-construction.php"> Prefab </a></li>
+              <li><a href="precast-hybrid-modular.php"> Precast Hybrid Modular </a></li>
+              <li><a href="technologies_lgsf.php"> Light Gauge Steel Framed Structures (LGSF) </a></li>
+              <li><a href="technologies_grc.php"> GRC </a></li>
+            </ul>
+          </li>
+          {{ else }}
+          <li> <a href="{{ url }}" aria-label="{{ title }}">{{ title }}</a> </li>
+          {{ /if }}
+          {{ /nav:main_nav }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,58 +1,107 @@
-<footer class="alt_footer bg-black text-white py-12">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-wrap">
-            <div class="w-full lg:w-1/4 mb-5 lg:mb-0">
-                <a href="/" aria-label="Back to Homepage" >
-                    <img src="/images/alt_logo.svg" alt="{{ config:app:name }}" class="w-[100px]">
-<!--                    <img src="{{ glide src='/images/logo.png' format='webp' width='100'}}" alt="{{ config:app:name }}" class="w-[100px]">-->
-                </a>
-            </div>
 
-            <div class="w-full lg:w-1/4">
-                {{ if contact_details:address }}
-                <div class="leading-6 text-base mb-4">{{ contact_details:address }}</div>
-                {{ /if }}
-            </div>
+        <footer class="main-footer">
+            <div class="auto-container">
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="row clearfix">
 
-            <div class="w-full lg:w-1/4 flex flex-col">
-                {{ if contact_details:telephone }}
-                <div class="inline-flex font-semibold">
-                    T: <a href="tel:{{ contact_details:telephone }}" class="ml-2 mb-1 font-normal">{{ contact_details:telephone }}</a>
-                </div>
-                {{ /if }}
+                        <!--Column-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="widget-content">
+                                    <div class="logo">
+                                        <a href="index.php"><img id="fLogo" src="/images/logo.png" alt="" /></a>
+                                    </div>
+                                     <ul class="social-links clearfix">
+                                        <li><a href="https://www.facebook.com/RNCInfraaa"><span class="fab fa-facebook-square"></span></a></li>
+                                        <li><a href="https://www.instagram.com/rncinfraa1/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/company/rnc-infraa"><span class="fab fa-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                {{ if contact_details:email }}
-                <div class="inline-flex font-semibold">
-                    E: <a href="mailto:{{ contact_details:email }}" class="ml-2 mb-6 font-normal">{{ contact_details:email }}</a>
-                </div>
-                {{ /if }}
-                {{ partial src="parts/social-links" }}
-            </div>
+                        <!--Column-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-content">
+                                    <h6>Our Products</h6>
+                                    <div class="row clearfix">
+                                        <div class="col-md-6 col-sm-12">
+                                            <ul>
+                                                <li><a href="product-precast.php#hybridmodulartoilets">Modular Toilets</a></li>
+                                                <li><a href="product-precast.php#hybridmodularoffices">Modular Office</a></li>
+                                                <li><a href="prefab-workmen-colony.php">Workmen Colony</a></li>
+                                                <li><a href="prefab-housing.php">Prefab Housing</a></li>
+                                                <li><a href="product-precast.php#hybridmodularhomes">Hybrid Modular Homes</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <ul>
+                                                <li><a href="product-precast.php#hybridmodularoffices">Precast Offices</a></li>
+                                                <li><a href="product-lgsf.php">LGSF Structures</a></li>
+                                                <li><a href="product-grc.php">GRC Structures</a></li>
+                                                <li><a href="product-precast.php#hybridmodulartoilets">Precast Toilets</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="w-full lg:w-1/4 order-first lg:order-last mb-5 lg:mb-0">
-                <div class="footer-links flex flex-col space-y-4">
-                    {{ nav:footer_nav }}
-                    <div class="">
-                        <a href="{{ url }}">{{ title }}</a>
+                        <!--Column-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget info-widget">
+                                <div class="widget-content">
+                                    <h6>Contact</h6>
+                                    <ul class="contact-info">
+										{{ brand:office_addresses }}
+											<li class="address"><span class="icon flaticon-pin-1"></span>{{ office_address }}</li>
+										{{ /brand:office_addresses }}
+										{{ brand:phone_numbers }}
+										<li><span class="icon flaticon-call"></span><a href="tel:{{ phone_number }}" onclick="gtag('event', 'send', { 'event_category': 'click on Mobile', 'event_action': 'Mobile', 'event_label': '{{ phone_number }}' });">{{ phone_number }}</a></li>
+										{{ /brand:phone_numbers }}
+										{{ brand:emails }}
+										<li><span class="icon flaticon-envelope"></span><a href="href:{{ email }}" onclick="gtag('event', 'send', { 'event_category': 'click on Email', 'event_action': 'Email', 'event_label': '{{ email }}' });">{{ email }}</a></li>
+										{{ /brand:emails }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Column-->
+                        <div class="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget newsletter-widget">
+                                <div class="widget-content">
+                                    <h6>Newsletter</h6>
+                                    <div class="newsletter-form">
+                                        <form method="post" action="#">
+                                            <div class="form-group clearfix">
+                                                <input type="email" name="email" value="" placeholder="Email Address"
+                                                    required="">
+                                                <button type="submit" class="theme-btn"><span
+                                                        class="fa fa-envelope"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="text">Sign up for our latest news & articles. We won’t give you spam
+                                        mails.</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    {{ /nav:footer_nav }}
+
                 </div>
             </div>
-        </div>
 
-        <div class="bottom border-t border-white pt-6 mt-6 text-white flex flex-wrap justify-between items-center">
-            <div class="footer-small-links flex space-x-5">
-            {{ nav:footer_small_links }}
-            <div class="text-xs">
-                <a href="{{ url }}">{{ title }}</a>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="inner clearfix">
+                        <div class="copyright">&copy; Copyright 2024 by RNC Infraa Pvt. Ltd.</div>
+                    </div>
+                </div>
             </div>
-            {{ /nav:footer_small_links }}
-            </div>
-            <div class="flex items-center text-xs leading-5">
-                Site by <a href="https://www.alt-design.net/" target="_blank" class="pl-1 hover:underline">Alt</a>
-                <div class="ml-4">
-                    &copy; {{ now|format:Y }} {{ config:app:name }}</div>
-            </div>
-        </div>
-    </div>
-</footer>
+
+        </footer>

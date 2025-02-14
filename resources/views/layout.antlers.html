@@ -1,16 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{ alt_seo:meta }}
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="alt_starter_kit page-{{ slug }} relative" x-data="{navOpen: false, modalOpen: false}">
-        {{ partial src="parts/header"}}
+<head>
+<meta charset="utf-8">
+{{ alt_seo:meta }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/fontawesome-all.css" rel="stylesheet">
+<link href="/css/owl.css" rel="stylesheet">
+<link href="/css/flaticon.css" rel="stylesheet">
+<link href="/css/animate.css" rel="stylesheet">
+<link href="/css/jquery-ui.css" rel="stylesheet">
+<link href="/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="/css/hover.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/jarallax.css">
+<link href="/css/custom-animate.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/rtl.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/custom.css?ver=1.0" rel="stylesheet">
+<link rel="stylesheet" id="/jssDefault" href="/css/colors/color-default.css">
+<link rel="shortcut icon" href="favicon.png" id="fav-shortcut" type="image/x-icon">
+<link rel="icon" href="favicon.png" id="fav-icon" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+.sticky-form {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 9;
+}
+.sticky-form .sendquery-form {
+    float: right;
+    position: relative;
+}
+.sticky-form .sendquery-form .send-enquiry-sec {
+    width: 200px;
+    position: absolute;
+    right: -150px;
+    height: 50px;
+    background: #000;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+.sticky-form .sendquery-form .send-enquiry-sec .inqur-text {
+    color: #fff;
+    vertical-align: middle;
+    line-height: 50px;
+    font-weight: 600;
+}
+.send-enquiry-sec.form2:hover, .send-enquiry-sec.form3:hover, .send-enquiry-sec.form4:hover, .sticky-form .sendquery-form .send-enquiry-sec.form1:hover {
+    right: 0;
+    transition: all .3s;
+}
+.sticky-form .sendquery-form .send-enquiry-sec .enq-icon {
+    width: 50px;
+    height: 50px;
+    background: #f7be59;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec .enq-icon img {
+    width: 30px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form2 {
+    margin-top: 69px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form3 {
+    margin-top: 138px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form3 .inqur-text {
+    color: #fff;
+    font-size: 14px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form4 {
+    margin-top: 200px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form4 .inqur-text {
+    color: #fff;
+    font-size: 14px;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form2 .enq-icon {
+    background: #f7be59;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form2 {
+    background: #000;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form3 .enq-icon {
+    background: #f7be59;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form3 {
+    background: #000;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form4 .enq-icon12 {
+    background: #f7be59;
+}
+.sticky-form .sendquery-form .send-enquiry-sec.form4 {
+    background: #000;
+}
+span.enq-icon12 {
+    width: 50px;
+    height: 50px;
+    background: #f7be59;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+</style>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+</head>
+<body>
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL72N6Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div class="page-wrapper">
+  <div class="modal fade" tabindex="-1" id="onload">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><b>Request A Quote</b></h5>
+          <button type="button" class="btn-close stick_close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body stick_popup">
+          <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12"> <img src="images/logo.png" alt="" title="" class="img-responsive pop-img-12 center-block">
+              <h3 class="text-center headerh3">Get More Information<br>
+                <b><a style="color: #f7be59;font-weight: bold;" href="mailto: info@rncinfraa.com" onclick="gtag('event', 'send', { 'event_category': 'click on mail', 'event_action': 'mailto', 'event_label': ' info@rncinfraa.com' });"> info@rncinfraa.com</a></b></h3>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12">
+              <div class="widget footer-widgets tag-widget" style="margin-top:10px;">
+                <form class="form-horizontal form1" action="inquiry-action.php" method="post">
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="name" id="name" type="text" placeholder="Your Name:" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="email" id="email" type="text" placeholder="E-Mail Address" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="city" id="city" type="text" placeholder="Your City:" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="number" id="number" type="tel" placeholder="Your Phone:" maxlength="10" minlength="10" class="form-control number21">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <textarea class="form-control" name="message" id="message" placeholder="Requirement" minlength="4" maxlength="300"></textarea>
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="col-md-12" style="padding:0px;">
+                      <div class="row">
+                        <div class="col-md-8 ">
+                          <input name="captcha" id="captcha" placeholder="Captcha Code:" class="form-control" type="text">
+                          <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                        <div class="col-md-4"> <img src="captcha.php" style="float:left;margin-top: 5px;margin-bottom: 15px;"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input class="submit class-submit" name="submit" type="submit" value="SUBMIT">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" tabindex="-1" id="onload1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><b>Catalogue Request Form</b></h5>
+        </div>
+        <button type="button" class="btn-close stick_close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body stick_popup1">
+          <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12"> <img src="images/logo.png" alt="" title="" class="img-responsive pop-img-12 center-block">
+              <h3 class="text-center headerh3">Get More Information<br>
+                <b><a style="color: #f7be59;font-weight: bold;" href="mailto: info@rncinfraa.com" onclick="gtag('event', 'send', { 'event_category': 'click on mail', 'event_action': 'mailto', 'event_label': ' info@rncinfraa.com' });"> info@rncinfraa.com</a></b></h3>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12">
+              <div class="widget footer-widgets tag-widget" style="margin-top:10px;">
+                <form class="form-horizontal form5" action="catalogue-action.php" method="post">
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="name" id="name" type="text" placeholder="Your Name:" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="email" id="email" type="text" placeholder="E-Mail Address" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="city" id="city" type="text" placeholder="Your City:" class="form-control">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input name="number" id="number" type="tel" placeholder="Your Phone:" maxlength="10" minlength="10" class="form-control number21">
+                        <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="col-md-12" style="padding:0px;">
+                      <div class="row">
+                        <div class="col-md-8 ">
+                          <input name="captcha" id="captcha" placeholder="Captcha Code:" class="form-control" type="text">
+                          <span class="form-control-feedback glyphicon glyphicon-ok"></span> </div>
+                        <div class="col-md-4"> <img src="captcha.php" style="float:left;margin-top: 5px;margin-bottom: 15px;"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="hidden" id="pt" name="path" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input class="submit class-submit" name="submit" type="submit" value="SUBMIT">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile">
+    <div class="navbar23 d-block d-md-block d-lg-none">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-6 "> <a href="javascript:;" class="click2">
+          <button type="button" class="btn btn-danger center-block">Download Catalogue</button>
+          </a> </div>
+        <div class="col-md-6 col-sm-6 col-6 ">
+          <button type="button" class="btn btn-danger center-block click1">Get Free Quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	{{ partial src="parts/header"}}
         {{ template_content }}
         {{ partial src="parts/footer"}}
-        {{ AltCookies:Toast }}
-    </body>
+</div>
+<!--End pagewrapper--> 
+
+<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+<div class="sticky-form">
+  <div class="sendquery-form">
+    <div class="send-enquiry-sec form1"> <span class="enq-icon"><img src="/images/sidebar-menu/sendquery-icon.png" alt="sendquery-icon" width="30px" height="30px"></span> <a href="javascript:;" class="click1"><span class="inqur-text">Send Enquiry </span></a> </div>
+    <div class="send-enquiry-sec form2"> <span class="enq-icon"><img src="/images/sidebar-menu/sticky-cal.png" alt="cal-icon" width="30px" height="30px"></span><a href="tel:+919979097311" onclick="gtag('event', 'send', { 'event_category': 'click on Mobile', 'event_action': 'Mobile', 'event_label': '+91 99790 97311' });"><span class="inqur-text">+91 99790 97311</span></a></div>
+    <div class="send-enquiry-sec form3"> <span class="enq-icon"><img src="/images/sidebar-menu/sticky-mail.png" alt="mail-icon" width="30px" height="30px"></span><a href="mailto:info@rncinfraa.com" onclick="gtag('event', 'send', { 'event_category': 'click on mail', 'event_action': 'mailto', 'event_label': 'info@rncinfraa.com' });"><span class="inqur-text">info@rncinfraa.com</span></a></div>
+    <div class="send-enquiry-sec form4"> <span class="enq-icon12"><img src="/images/sidebar-menu/download-btn.png" alt="sendquery-icon" width="30px" height="30px"></span> <a href="download.php" ><span class="inqur-text">Download Catalogue </span></a> </div>
+  </div>
+</div>
+<script src="/js/jquery.js"></script> 
+<script src="/js/popper.min.js"></script> 
+<script src="/js/bootstrap.min.js"></script> 
+<script src="/js/TweenMax.js"></script> 
+<script src="/js/jquery-ui.js"></script> 
+<script src="/js/jquery.fancybox.js"></script> 
+<script src="/js/owl.js"></script> 
+<script src="/js/mixitup.js"></script> 
+<script src="/js/appear.js"></script> 
+<script src="/js/wow.js"></script> 
+<script src="/js/jQuery.style.switcher.min.js"></script> 
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script> --> 
+<script src="/js/jquery.easing.min.js"></script> 
+<script src="/js/jarallax.min.js"></script> 
+<script src="/js/custom-script.js"></script> 
+<script src="/js/lang.js"></script> 
+<!-- <script src="https://translate.google.com/translate_a/elementa0d8.html?cb=googleTranslateElementInit"></script> --> 
+<script src="/js/color-switcher.js"></script> 
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
+    // close all inner dropdowns when parent is closed
+    document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+    // after dropdown is hidden, then find all submenus
+    this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+    // hide every submenu as well
+    everysubmenu.style.display = 'none';
+    });
+    })
+    });
+    document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+    let nextEl = this.nextElementSibling;
+    if(nextEl && nextEl.classList.contains('submenu')) {
+    // prevent opening link if link needs to open dropdown
+    e.preventDefault();
+    if(nextEl.style.display == 'block'){
+    nextEl.style.display = 'none';
+    } else {
+    nextEl.style.display = 'block';
+    }
+    }
+    });
+    })
+    }
+    // end if innerWidth
+    });
+    // DOMContentLoaded  end
+    </script> 
+<script>
+  $(document).ready(function(){
+  //the trigger on hover when cursor directed to this class
+    $(".core-menu li").hover(
+    function(){
+      //i used the parent ul to show submenu
+        $(this).children('ul').slideDown('fast');
+    }, 
+      //when the cursor away 
+    function () {
+        $('ul', this).slideUp('fast');
+    });
+  //this feature only show on 600px device width
+    $(".hamburger-menu").click(function(){
+      $(".burger-1, .burger-2, .burger-3").toggleClass("open");
+        $(".core-menu").slideToggle("fast");
+    });
+});
+
+</script> 
+<!-- <script type="text/javascript">
+
+   (function($) {
+   $.fn.menumaker = function(options) {
+   var cssmenu = $(this), settings = $.extend({
+   format: "dropdown",
+   sticky: false
+   }, options);
+   return this.each(function() {
+   $(this).find(".button").on('click', function(){
+   $(this).toggleClass('menu-opened');
+   var mainmenu = $(this).next('ul');
+   if (mainmenu.hasClass('open')) {
+   mainmenu.slideToggle().removeClass('open');
+   }
+   else {
+   mainmenu.slideToggle().addClass('open');
+   if (settings.format === "dropdown") {
+   mainmenu.find('ul').show();
+   }
+   }
+   });
+   cssmenu.find('li ul').parent().addClass('has-sub');
+   multiTg = function() {
+   cssmenu.find(".has-sub").prepend('<li><span class="submenu-button12"></span></li>');
+   cssmenu.find('.submenu-button12').on('click', function() {
+   $(this).toggleClass('submenu-opened');
+   if ($(this).siblings('ul').hasClass('open')) {
+   $(this).siblings('ul').removeClass('open').slideToggle();
+   }
+   else {
+   $(this).siblings('ul').addClass('open').slideToggle();
+   }
+   });
+   };
+   if (settings.format === 'multitoggle') multiTg();
+   else cssmenu.addClass('dropdown');
+   if (settings.sticky === true) cssmenu.css('position', 'fixed');
+   resizeFix = function() {
+   var mediasize = 1024;
+   if ($( window ).width() > mediasize) {
+   cssmenu.find('ul').show();
+   }
+   if ($(window).width() <= mediasize) {
+   cssmenu.find('ul').hide().removeClass('open');
+   }
+   };
+   resizeFix();
+   return $(window).on('resize', resizeFix);
+   });
+   };
+   })(jQuery);
+
+   (function($){
+    $(document).ready(function(){
+    $("#cssmenu").menumaker({
+    format: "multitoggle"
+   });
+   });
+   })(jQuery);
+
+</script> --> 
+
+<script src="/js/jquery.validate.min.js"></script> 
+<script src="/js/index.js"></script> 
+<script>
+   jQuery(document).ready(function() {
+   jQuery(".click1").click(function() {
+   jQuery('#onload').modal('show');
+   });
+   });
+</script> 
+<script>
+   jQuery(document).ready(function() {
+   jQuery(".click2").click(function() {
+   jQuery('#onload1').modal('show');
+   });
+   });
+</script> 
+<script>
+   jQuery(document).ready(function() {
+   jQuery(".click2").click(function(event) {
+   var hreff = jQuery(this).attr('href');
+   document.getElementById('pt').value = hreff;
+   jQuery("#contactdiv").css("display", "block");
+   event.preventDefault();
+   });
+   });
+</script> 
+<script type="text/javascript">
+   setTimeout(function(){$('#onload23').modal('show');},8000);
+</script> 
+<script>
+   jQuery(document).ready(function() {
+   jQuery(".number21").keypress(function(e) {
+   if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+   jQuery("#errmsg").html("Digits Only").show().fadeOut("slow");
+   return false;
+   }
+   });
+   });   
+</script>
+</body>
 </html>
